@@ -1,47 +1,5 @@
 
-@media (max-width: 700px) {
-    img {
-    border-radius: 18px;
-    max-width: 90%;
-    margin: 40px auto 20px auto;
-}
 
-p {
-    margin-bottom: 30px;
-    padding: 0 10px;
-    max-width: 90%;
- }
-
-    .container {
-        margin-top: 40px;
-    }
-
-  .recipe-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "ingredients"
-      "chillimix"
-      "instructions";
-      gap: 20px;
-  }
-
-    .card-top.hidden {
-        display: none !important;
-        opacity: 0;
-        pointer-events: none;
-        visibility: hidden;
-        position: static;
-        transform: none;
-    }
-
-  .card,
-  .card-top {
-    padding: 20px;
-    margin-bottom: 0;
-    width: 100%
-  }
-}
 
 .card-top + .card {
     margin-top: 0 !important;
@@ -184,6 +142,50 @@ p {
     padding: 0 10px;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    img {
+    border-radius: 18px;
+    max-width: 90%;
+    margin: 40px auto 20px auto;
+}
+
+p {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    max-width: 90%;
+ }
+
+    .container {
+        margin-top: 40px;
+    }
+
+  .recipe-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "ingredients"
+      "chillimix"
+      "instructions";
+      gap: 20px;
+  }
+
+    .card-top.hidden {
+        display: none !important;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        position: static;
+        transform: none;
+    }
+
+  .card,
+  .card-top {
+    padding: 20px;
+    margin-bottom: 0;
+    width: 100%
+  }
 }
     
 

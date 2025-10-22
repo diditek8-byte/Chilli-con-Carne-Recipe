@@ -41,14 +41,9 @@ p {
     padding: 0;
 }
 
-.container {
+.recipe-layout {
     position: relative;
-    margin-top: -700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    padding: 10px;
+    margin: 0 auto;
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -56,7 +51,7 @@ p {
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
-    gap: 30px; 
+    gap: 40px; 
     margin: 0 auto;
 }
 

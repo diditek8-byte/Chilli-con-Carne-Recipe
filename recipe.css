@@ -161,6 +161,11 @@ p {
         margin-top: 40px;
     }
 
+    .ingredients-card {
+        min-height: 500px;
+    }
+        
+
   .recipe-layout {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

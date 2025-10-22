@@ -23,8 +23,6 @@ p {
       "ingredients"
       "chillimix"
       "instructions";
-    gap: 20px;
-     
   }
 
   .card,
@@ -49,16 +47,17 @@ p {
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
-    gap: 40px; 
-    margin: 0 auto;
+    gap: 30px; 
 }
 
 .container-top {
     display: contents;
+    z-index: 2;
 }
 
 .container {
     display: contents;
+    z-index: 1;
 }
     
 

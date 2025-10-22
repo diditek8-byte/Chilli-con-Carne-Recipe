@@ -33,7 +33,6 @@ p {
         visibility: hidden;
         position: static;
         transform: none;
-        z-index: -1;
     }
 
   .card,

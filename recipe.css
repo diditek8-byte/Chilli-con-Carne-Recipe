@@ -40,7 +40,7 @@ p {
 
 .container {
     position: relative;
-    top: -320px;
+    top: -620px;
     z-index: 1;
     padding: 10px;
     max-width: 900px;
@@ -50,9 +50,7 @@ p {
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
-    gap: 40px;
-    display: flex;
-    justify-content: center;  
+    gap: 40px; 
 }
 
 .container-top {

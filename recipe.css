@@ -23,6 +23,7 @@ p {
       "ingredients"
       "chillimix"
       "instructions";
+      gap: 20px;
   }
 
     .card-top.hidden {
@@ -32,12 +33,14 @@ p {
         visibility: hidden;
         position: static;
         transform: none;
+        z-index: -1;
     }
 
   .card,
   .card-top {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    width: 100%
   }
 }
 

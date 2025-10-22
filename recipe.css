@@ -52,28 +52,27 @@ p {
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 360px auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
     gap: 30px; 
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .container-top {
-    margin: auto;
+    margin: 40px auto;
     padding: 10px;
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 360px auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
     gap: 40px;
     position: relative;
-    z-index: 2;
-    pointer-events: none;
+    z-index: 5;
 }
     
 
@@ -149,6 +148,9 @@ input[type="checkbox"] {
     position: absolute;
     z-index: -1;
 }
+
+.container-top.hidden{
+    pointer-events: none;
    
 
 

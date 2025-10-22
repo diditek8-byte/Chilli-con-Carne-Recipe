@@ -34,7 +34,7 @@ p {
     padding: 0;
 }
 
-.container, .container-top {
+.container {
     margin: 40px auto;
     padding: 10px;
     max-width: 900px;
@@ -45,6 +45,19 @@ p {
       "chillimix ."; 
     gap: 40px;
 }
+
+.container-top {
+    margin: auto;
+    padding: 10px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "ingredients instructions"
+      "chillimix ."; 
+    gap: 40px;
+}
+    
 
 .instructions-card, .instructions-card-top {
     grid-area: instructions;

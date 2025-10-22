@@ -40,7 +40,7 @@ p {
 
 .container {
     position: relative;
-    top: -705px;
+    top: -702px;
     display: flex;
     flex-direction: column;
     align-items: center

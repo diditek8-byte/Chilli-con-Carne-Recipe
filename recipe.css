@@ -20,7 +20,6 @@ p {
       "chillimix"
       "instructions";
     gap: 20px;
-    padding: 10px;
   }
 
   .card,
@@ -39,14 +38,12 @@ p {
     margin: 40px auto;
     padding: 10px;
     max-width: 900px;
-    gap: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     grid-template-areas: 
-    "ingredients instructions"
-    "chillimix instructions"; 
-    position: relative;
+      "ingredients instructions"
+      "chillimix instructions"; 
+    gap: 40px;
 }
 
 .instructions-card, .instructions-card-top {

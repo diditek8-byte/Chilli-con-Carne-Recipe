@@ -43,7 +43,7 @@ p {
 
 .container {
     position: relative;
-    top: -702px;
+    margin-top: -700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,27 +52,27 @@ p {
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 360px auto;
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
     gap: 30px; 
-    margin: 40px auto;
+    margin: 0 auto;
 }
 
 .container-top {
-    margin: 40px auto;
+    margin: auto;
     padding: 10px;
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 360px auto;
     grid-template-areas: 
       "ingredients instructions"
       "chillimix instructions"; 
     gap: 40px;
     position: relative;
-    z-index: 5;
+    z-index: 3;
 }
     
 
@@ -136,7 +136,6 @@ input[type="checkbox"] {
     border: 2px solid #7d0531;
     transition: opacity 2s ease-in-out, transform 2s ease;
     z-index: 5;
-    pointer-events: auto;
     position: relative;
 }
 

@@ -40,7 +40,7 @@ p {
 
 .container {
     position: relative;
-    top: -820px;
+    top: -720px;
     z-index: 1;
     padding: 10px;
     max-width: 900px;

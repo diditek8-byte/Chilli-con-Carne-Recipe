@@ -39,9 +39,8 @@ p {
 }
 
 .container {
-    margin-top: 0;
     position: relative;
-    top: -120px;
+    top: -320px;
     z-index: 1;
     padding: 10px;
     max-width: 900px;

@@ -25,6 +25,15 @@ p {
       "instructions";
   }
 
+    .card-top.hidden {
+        display: none !important;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        position: static;
+        transform: none;
+    }
+
   .card,
   .card-top {
     padding: 20px;

@@ -42,14 +42,14 @@ p {
     margin-top: 0;
     position: relative;
     z-index: 1;
-    margin-top: -1oopx;
+    margin-top: -100px;
     padding: 10px;
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
       "ingredients instructions"
-      "chillimix ."; 
+      "chillimix instructions"; 
     gap: 40px;
 }
 
@@ -61,7 +61,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
       "ingredients instructions"
-      "chillimix ."; 
+      "chillimix instructions"; 
     gap: 40px;
     position: relative;
     z-index: 2;

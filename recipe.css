@@ -135,8 +135,9 @@ input[type="checkbox"] {
     background-color: #fdf5f7;
     border: 2px solid #7d0531;
     transition: opacity 2s ease-in-out, transform 2s ease;
-    z-index: 10;
+    z-index: 5;
     pointer-events: auto;
+    position: relative;
 }
 
 .card-top.hidden {
@@ -144,7 +145,8 @@ input[type="checkbox"] {
     pointer-events: none;
     visibility: hidden;
     transform: translateY(-20px);
-    z-index: 0;
+    position: absolute;
+    z-index: -1;
 }
    
 

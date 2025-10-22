@@ -1,25 +1,15 @@
 
-@media (max-width: 600px) {   
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
+@media (max-width: 600px) {
     img {
     border-radius: 18px;
-    width: 90%;
-    max-width: 500px;
-    height: auto;
-    margin: 80px auto 20px auto;
+    max-width: 90%;
+    margin: 40px auto 20px auto;
 }
 
 p {
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 500px;
-    font-size: 1rem;
-    line-height: 1.5;
-   
+    margin-bottom: 30px;
+    padding: 0 10px;
+    max-width: 90%;
  }
 
   .container,
@@ -29,6 +19,7 @@ p {
       "ingredients"
       "chillimix"
       "instructions";
+    gap: 20px;
     padding: 10px;
   }
 
@@ -38,39 +29,45 @@ p {
   }
 }
 
-.container {
-    margin: 0 auto;
+ body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-top {
+    margin: 40px auto;
     padding: 10px;
-    width: 90%;
     max-width: 900px;
     gap: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: 
     "ingredients instructions"
     "chillimix instructions"; 
     position: relative;
 }
 
-.instructions-card {
+.instructions-card, .instructions-card-top {
     grid-area: instructions;
-    height: 100%;
 }
 
-.ingredients-card {
+.ingredients-card, .ingredients-card-top {
     grid-area: ingredients;
 }
 
-.chillimix-card {
+.chillimix-card, .chillimix-card-top {
     grid-area: chillimix;
 }
 
-.card {
-    
+.card, .card-top {
+    background-color: white;
     box-shadow: 0px 10px 20px rgba(166, 86, 101, 0.3);
     padding: 40px;
     width: 100%;
     border-radius: 30px; 
+    box-sizing: border-box;
     
 }
 
@@ -83,14 +80,14 @@ p {
 }
 
 ul {
-    list-style-type: none
+    list-style-type: none;
+    padding-left: 0;
 }
 
 li::marker {
     font-size: 20px;
     font-weight: bold;
     color: #7d0531;
-  
 }
 
 h1 {
@@ -99,35 +96,14 @@ h1 {
 
 input[type="checkbox"] {
     margin-right: 10px;
-    padding: 20px;
     width: 17px;
     height: 17px;
-    cursor: pointer;
-    
-
+    cursor: pointer;  
 }
 
-.container-top {
-    margin: 40px auto;
-    width: 90%;
-    max-width: 900px;
-    gap: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-template-areas: 
-    "ingredients instructions"
-    "chillimix instructions"; 
-    position: relative;
-    z-index:10;
-    pointer-events: none;
-
-
-}
 
 .card-top {
     box-shadow: 0px 10px 20px rgba(166, 86, 101, 0.1);
-    padding: 40px;
-    width: 100%;
     border-radius: 30px; 
     background-color: #fdf5f7;
     border: 2px solid #7d0531;
@@ -143,22 +119,8 @@ input[type="checkbox"] {
     transform: translateY(-20px);
     z-index: 0;
 }
-
-.instructions-card-top {
-    grid-area: instructions;
-    height: 100%;
-      
-}
-
-.ingredients-card-top {
-    grid-area: ingredients;
-    
-}
-
-.chillimix-card-top {
-    grid-area: chillimix;
    
-}
+
 
 .expand-btn {
     height: 40px;
@@ -168,6 +130,8 @@ input[type="checkbox"] {
     margin: 35px 40px 50px 40px;
     background-color: #cca69a;
     font-weight: bold;
+    border: none;
+    color: white;
 }
 
 .expand-btn:hover {

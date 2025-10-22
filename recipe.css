@@ -148,8 +148,9 @@ input[type="checkbox"] {
     z-index: -1;
 }
 
-.container-top.hidden{
+.container-top.hidden {
     pointer-events: none;
+}
    
 
 

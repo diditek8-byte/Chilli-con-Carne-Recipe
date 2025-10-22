@@ -73,6 +73,7 @@ p {
     gap: 40px;
     position: relative;
     z-index: 2;
+    pointer-events: none;
 }
     
 
@@ -159,7 +160,6 @@ input[type="checkbox"] {
     margin: 35px 40px 50px 40px;
     background-color: #cca69a;
     font-weight: bold;
-    color: white;
 }
 
 .expand-btn:hover {

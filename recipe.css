@@ -19,6 +19,7 @@ p {
   .container,
   .container-top {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "ingredients"
       "chillimix"

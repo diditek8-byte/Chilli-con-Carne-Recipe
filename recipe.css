@@ -42,7 +42,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
       "ingredients instructions"
-      "chillimix instructions"; 
+      "chillimix ."; 
     gap: 40px;
 }
 
